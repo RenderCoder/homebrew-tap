@@ -1,9 +1,7 @@
 class PlaneCli < Formula
   desc "CLI for Silicon Alchemists' customized Plane deployment"
   homepage "https://github.com/RenderCoder/plane-mcp-server/tree/main/plane-cli"
-  url "https://github.com/RenderCoder/plane-mcp-server/releases/download/plane-cli-v0.1.3/plane-cli-linux-x64.tar.gz"
   version "0.1.3"
-  sha256 "c8c6bc08ce829efb34ed3a61d3ca4f6f05e20a94fd4dde250c6d77e4e596527d"
   license "MIT"
 
   on_macos do
@@ -14,6 +12,11 @@ class PlaneCli < Formula
       url "https://github.com/RenderCoder/plane-mcp-server/releases/download/plane-cli-v0.1.3/plane-cli-darwin-x64.tar.gz"
       sha256 "8c190750ea376b5da537b45cfad770e23741549d61c28e4144c84195fb5ee605"
     end
+  end
+
+  on_linux do
+    url "https://github.com/RenderCoder/plane-mcp-server/releases/download/plane-cli-v0.1.3/plane-cli-linux-x64.tar.gz"
+    sha256 "c8c6bc08ce829efb34ed3a61d3ca4f6f05e20a94fd4dde250c6d77e4e596527d"
   end
 
   def install
